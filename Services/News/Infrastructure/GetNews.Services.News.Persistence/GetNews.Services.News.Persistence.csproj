@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Npgsql" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Shared\GetNews.Shared\GetNews.Shared.csproj" />
+    <ProjectReference Include="..\..\Core\GetNes.Services.News.Application\GetNews.Services.News.Application.csproj" />
+    <ProjectReference Include="..\..\Core\GetNews.Services.News.Domain\GetNews.Services.News.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

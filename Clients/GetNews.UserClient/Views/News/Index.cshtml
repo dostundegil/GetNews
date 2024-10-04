@@ -1,0 +1,28 @@
+﻿@model List<GetNews.UserClient.Models.NewsModels.NewsVM>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container m-3">
+    <div class="mb-4 mt-4">
+        <h1 class="fs-2">Breaking<span class="text-danger fw-bold">News</span></h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-3 mb-4">
+                    <div class="card bg-dark text-white text-center border-0 shadow-xl rounded-5" style="width: 18rem;">
+                        <img src="https://picsum.photos/600/600" style="filter: brightness(0.5)" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">
+                                @item.Title
+                            </h5>
+                            <p class="card-text pt-5">@item.Summary</p>
+                            <p class="card-text pt-2">@item.publish_date.ToString("ddd, dd MMM yyyy")</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

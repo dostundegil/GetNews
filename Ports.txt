@@ -1,0 +1,9 @@
+Services
+-newsApi: 5011
+-notification: 5012
+
+IdentityServer: 5001
+Gateway:5000
+
+Clients:
+UsersClient: 5021
